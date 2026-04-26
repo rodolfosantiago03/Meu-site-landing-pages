@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE | Landing Pages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-bracket"></span>CODE<span class="logo-dot">.</span><span class="logo-bracket"></span>
+            </a>
+            <nav class="nav">
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#projetos" class="nav-link">Projetos</a>
+                <a href="#depoimentos" class="nav-link">Depoimentos</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </nav>
+            <a href="https://wa.me/5511999999999" class="btn-pro" target="_blank">
+                <span class="btn-pro-glow"></span>
+                <span class="btn-pro-text">Pro</span>
+            </a>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#sobre" class="mobile-link">Sobre</a>
+        <a href="#servicos" class="mobile-link">Serviços</a>
+        <a href="#projetos" class="mobile-link">Projetos</a>
+        <a href="#depoimentos" class="mobile-link">Depoimentos</a>
+        <a href="#faq" class="mobile-link">FAQ</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Disponível para projetos
+            </div>
+            <h1 class="hero-title">
+                <span class="title-static">Transforme visitantes em clientes com páginas feitas para converter.</span>
+                <br>
+                <span class="title-typed" id="typewriter"></span><span class="cursor">|</span>
+            </h1>
+            <p class="hero-subtitle">
+                Landing pages estratégicas, rápidas e orientadas a resultado — criadas para quem leva crescimento a sério.
+            </p>
+            <div class="hero-ctas">
+                <a href="https://wa.me/5594992719859?text=Olá,%20gostaria%20de%20um%20orçamento" class="btn-primary" target="_blank">
+                    <span class="btn-glow"></span>
+                    <span class="btn-content">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                        </svg>
+                        Quero mais Clientes
+                    </span>
+                </a>
+                <a href="#projetos" class="btn-secondary">
+                    <span class="btn-border"></span>
+                    <span class="btn-content">Ver Projetos</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Stats -->
+        <div class="stats-container">
+            <div class="stat-item" data-target="100">
+                <div class="stat-number">
+                    <span class="stat-plus">+</span>
+                    <span class="stat-value" data-count="100">0</span>
+                </div>
+                <div class="stat-label">Projetos Entregues</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item" data-target="50000">
+                <div class="stat-number">
+                    <span class="stat-plus">+</span>
+                    <span class="stat-value" data-count="50000">0</span>
+                    <span class="stat-suffix">k</span>
+                </div>
+                <div class="stat-label">Profissionais Impactados</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item" data-target="98">
+                <div class="stat-number">
+                    <span class="stat-value" data-count="98">0</span>
+                    <span class="stat-suffix">%</span>
+                </div>
+                <div class="stat-label">Satisfação Clientes</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clientes / Social Proof -->
+    <section class="clients" id="clients">
+
+        <div class="marquee-container">
+            <div class="marquee-track" id="marquee-track">
+                <!-- Logos serão duplicados via JS para loop infinito -->
+                <div class="marquee-item">
+                    <svg viewBox="0 0 120 40" class="client-logo"><text x="10" y="28" fill="currentColor" font-family="Inter" font-weight="700" font-size="18">CODE</text></svg>
+                </div>
+                <div class="marquee-item">
+                    <svg viewBox="0 0 120 40" class="client-logo"><text x="10" y="28" fill="currentColor" font-family="Inter" font-weight="700" font-size="18">CODE</text></svg>
+                </div>
+                <div class="marquee-item">
+                    <svg viewBox="0 0 120 40" class="client-logo"><text x="10" y="28" fill="currentColor" font-family="Inter" font-weight="700" font-size="18">CODE</text></svg>
+                </div>
+                <div class="marquee-item">
+                    <svg viewBox="0 0 120 40" class="client-logo"><text x="10" y="28" fill="currentColor" font-family="Inter" font-weight="700" font-size="18">CODE</text></svg>
+                </div>
+                <div class="marquee-item">
+                    <svg viewBox="0 0 120 40" class="client-logo"><text x="10" y="28" fill="currentColor" font-family="Inter" font-weight="700" font-size="18">CODE</text></svg>
+                </div>
+                <div class="marquee-item">
+                    <svg viewBox="0 0 120 40" class="client-logo"><text x="10" y="28" fill="currentColor" font-family="Inter" font-weight="700" font-size="18">CODE</text></svg>
+                </div>
+                <div class="marquee-item">
+                    <svg viewBox="0 0 120 40" class="client-logo"><text x="10" y="28" fill="currentColor" font-family="Inter" font-weight="700" font-size="18">CODE</text></svg>
+                </div>
+                <div class="marquee-item">
+                    <svg viewBox="0 0 120 40" class="client-logo"><text x="10" y="28" fill="currentColor" font-family="Inter" font-weight="700" font-size="18">CODE</text></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Sobre</span>
+                <h2 class="section-title">O que faz suas páginas venderem mais</h2>
+            </div>
+            <div class="sobre-grid">
+                <div class="sobre-card" data-parallax="slow">
+                    <div class="card-glass">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                                <path d="M2 2l7.586 7.586"/>
+                                <circle cx="11" cy="11" r="2"/>
+                            </svg>
+                        </div>
+                        <h3>Design Estratégico</h3>
+                        <p>Nada é feito no “achismo”. A estrutura da página é planejada com foco em comportamento do usuário e tomada de decisão.</p>
+                    </div>
+                </div>
+                <div class="sobre-card" data-parallax="fast">
+                    <div class="card-glass">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                            </svg>
+                        </div>
+                        <h3>Performance que mantém o usuário</h3>
+                        <p>Velocidade não é detalhe — é conversão. Páginas rápidas, fluidas e otimizadas para não perder visitantes no meio do caminho.</p>
+                    </div>
+                </div>
+                <div class="sobre-card" data-parallax="slow">
+                    <div class="card-glass">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="2" y1="12" x2="22" y2="12"/>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            </svg>
+                        </div>
+                        <h3>Copy que direciona ação</h3>
+                        <p>Palavras que guiam, convencem e convertem. Cada seção da página é pensada para reduzir objeções e aumentar confiança.</p>
+                    </div>
+                </div>
+                <div class="sobre-card" data-parallax="fast">
+                    <div class="card-glass">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3>Evolução Contínua</h3>
+                        <p>Resultados não param no lançamento. Acompanhamento, testes e melhorias para escalar sua conversão com o tempo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços com 3D Tilt -->
+    <section class="servicos" id="servicos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Serviços</span>
+                <h2 class="section-title">Escolha o nível de crescimento que seu negócio precisa</h2>
+            </div>
+            <div class="servicos-grid">
+                <!-- Card Básico -->
+                <div class="servico-card" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.3">
+                    <div class="servico-inner">
+                        <div class="servico-badge">Básico</div>
+                        <div class="servico-price">
+                            <span class="currency">R$</span>
+                            <span class="value">2.497</span>
+                        </div>
+                        <p class="servico-desc">Landing page focada em conversão, criada para transformar visitantes em leads ou clientes.</p>
+                        <ul class="servico-features">
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Estrutura estratégica de alta conversão</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Desing profissional e responsivo</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Copy otimizada para ação</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>SEO essencial configurado</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Entrega rápida</li>
+                        </ul>
+                        <a href="https://wa.me/5594992719859?text=Olá,%20gostaria%20de%20um%20orçamento" class="servico-btn" target="_blank">Começar com estratégia</a>
+                    </div>
+                </div>
+
+                <!-- Card Pro -->
+                <div class="servico-card" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.3">
+                    <div class="servico-inner">
+                        <div class="servico-badge badge-pro">Pro</div>
+                        <div class="servico-price">
+                            <span class="currency">R$</span>
+                            <span class="value">4.997</span>
+                        </div>
+                        <p class="servico-desc">Para quem já investe em tráfego e quer escalar resultados</p>
+                        <ul class="servico-features">
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Até 5 páginas estratégicas</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Experiêcia interativa com animações</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Estrutura orientada a funil</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Integrações (WhatsApp, CRM, etc.)</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Analytics e rastreamento configurado</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Suporte pós-entrega</li>
+                        </ul>
+                        <a href="https://wa.me/5594992719859?text=Olá,%20gostaria%20de%20um%20orçamento" class="servico-btn btn-pro-card" target="_blank">Quero escalar meus resultados</a>
+                    </div>
+                </div>
+
+                <!-- Card Elite -->
+                <div class="servico-card card-elite" data-tilt data-tilt-max="20" data-tilt-speed="300" data-tilt-glare data-tilt-max-glare="0.5">
+                    <div class="servico-inner">
+                        <div class="elite-glow"></div>
+                        <div class="servico-badge badge-elite">Elite</div>
+                        <div class="servico-price price-elite">
+                            <span class="currency">R$</span>
+                            <span class="value">9.997</span>
+                        </div>
+                        <p class="servico-desc">Para negócios que querem previsibilidade e crescimento contínuo.</p>
+                        <ul class="servico-features features-elite">
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Site + estrutura avançada de conversão</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Desing System exclusivo</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Integrações completas (APIs, automações)</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Setup de testes A/B</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Consultoria estratégica</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Prioridade máxima no desenvolvimento</li>
+                        </ul>
+                        <a href="https://wa.me/5594992719859?text=Olá,%20gostaria%20de%20um%20orçamento" class="servico-btn btn-elite" target="_blank">Quero um sistema de crescimento</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Processo (Timeline) -->
+    <section class="processo" id="processo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Processo</span>
+                <h2 class="section-title">Como Funciona</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line">
+                    <div class="timeline-progress" id="timeline-progress"></div>
+                </div>
+                
+                <div class="timeline-item" data-step="1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-number">01</span>
+                        <h3>Diagnóstico</h3>
+                        <p>Entendimento do seu negócio, público e objetivo.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-step="2">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-number">02</span>
+                        <h3>Estrutura estratégica</h3>
+                        <p>Planejamento da página com foco em conversão.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-step="3">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-number">03</span>
+                        <h3>Design + Desenvolvimento</h3>
+                        <p>Criação de uma experiência moderna, rápida e funcional.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-step="4">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-number">04</span>
+                        <h3>Lançamento e otimização</h3>
+                        <p>Publicação + ajustes para melhorar resultados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos (Portfólio) -->
+    <section class="projetos" id="projetos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfólio</span>
+                <h2 class="section-title">Estruturas pensadas para gerar resultados</h2>
+            </div>
+            <div class="filtros">
+                <button class="filtro-btn active" data-filter="all">Todos</button>
+                <button class="filtro-btn" data-filter="web">Web</button>
+                <button class="filtro-btn" data-filter="app">App</button>
+                <button class="filtro-btn" data-filter="brand">Branding</button>
+            </div>
+            <div class="projetos-grid" id="projetos-grid">
+                <div class="projeto-card" data-category="web">
+                    <div class="projeto-image" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+                        <div class="projeto-overlay">
+                            <div class="projeto-info">
+                                <h3>Fintech Dashboard</h3>
+                                <span>Web Design</span>
+                            </div>
+                            <div class="projeto-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projeto-card" data-category="app">
+                    <div class="projeto-image" style="background: linear-gradient(135deg, #0f3460 0%, #533483 100%);">
+                        <div class="projeto-overlay">
+                            <div class="projeto-info">
+                                <h3>Health Tracker</h3>
+                                <span>App Mobile</span>
+                            </div>
+                            <div class="projeto-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projeto-card" data-category="brand">
+                    <div class="projeto-image" style="background: linear-gradient(135deg, #e94560 0%, #533483 100%);">
+                        <div class="projeto-overlay">
+                            <div class="projeto-info">
+                                <h3>Neon Brand</h3>
+                                <span>Branding</span>
+                            </div>
+                            <div class="projeto-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projeto-card" data-category="web">
+                    <div class="projeto-image" style="background: linear-gradient(135deg, #1b1b2f 0%, #1f4068 100%);">
+                        <div class="projeto-overlay">
+                            <div class="projeto-info">
+                                <h3>E-commerce Luxo</h3>
+                                <span>Web Design</span>
+                            </div>
+                            <div class="projeto-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projeto-card" data-category="app">
+                    <div class="projeto-image" style="background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);">
+                        <div class="projeto-overlay">
+                            <div class="projeto-info">
+                                <h3>Crypto Wallet</h3>
+                                <span>App Mobile</span>
+                            </div>
+                            <div class="projeto-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projeto-card" data-category="brand">
+                    <div class="projeto-image" style="background: linear-gradient(135deg, #533483 0%, #e94560 100%);">
+                        <div class="projeto-overlay">
+                            <div class="projeto-info">
+                                <h3>Aura Studio</h3>
+                                <span>Branding</span>
+                            </div>
+                            <div class="projeto-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="depoimentos" id="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Depoimentos</span>
+                <h2 class="section-title">Resultados reais de quem confiou no processo</h2>
+            </div>
+            <div class="slider-container">
+                <div class="slider-track" id="slider-track">
+                    <div class="depoimento-card">
+                        <div class="depoimento-stars">★★★★★</div>
+                        <p class="depoimento-text">"Alex transformou completamente nossa presença digital. O novo site aumentou nossas conversões em 340% no primeiro mês."</p>
+                        <div class="depoimento-author">
+                            <div class="author-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">MR</div>
+                            <div class="author-info">
+                                <strong>Marina Rocha</strong>
+                                <span>CEO, TechFlow</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="depoimento-card">
+                        <div class="depoimento-stars">★★★★★</div>
+                        <p class="depoimento-text">"Profissionalismo impecável. Cada detalhe foi pensado estrategicamente. Recomendo para quem quer resultados reais."</p>
+                        <div class="depoimento-author">
+                            <div class="author-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">GL</div>
+                            <div class="author-info">
+                                <strong>Gustavo Lima</strong>
+                                <span>Founder, StartupX</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="depoimento-card">
+                        <div class="depoimento-stars">★★★★★</div>
+                        <p class="depoimento-text">"O design é simplesmente espetacular. As animações dão vida ao projeto e a performance é incrível."</p>
+                        <div class="depoimento-author">
+                            <div class="author-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">AC</div>
+                            <div class="author-info">
+                                <strong>Ana Costa</strong>
+                                <span>CMO, BrandLab</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-dots" id="slider-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Dúvidas<br>frequentes</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Quanto tempo leva para criar um site?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O prazo varia conforme a complexidade do projeto, mas geralmente entregamos sites completos entre 7 e 20 dias úteis.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Vocês fazem apenas design ou também desenvolvem?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Oferecemos a solução completa: planejamento, design estratégico e desenvolvimento profissional do site.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>O site será responsivo para mobile?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim. Todos os nossos sites são 100% responsivos, garantindo uma excelente experiência em celulares, tablets e computadores.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Como funciona o pagamento?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Trabalhamos com entrada + saldo na entrega, podendo ajustar condições conforme o projeto.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Posso solicitar alterações após a entrega?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim. Oferecemos suporte inicial e possibilidade de ajustes para garantir que o site fique exatamente como você precisa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-final" id="cta-final">
+        <div class="cta-radial"></div>
+        <div class="container">
+            <h2 class="cta-title">Pronto para elevar<br>seu negócio?</h2>
+            <p class="cta-subtitle">Você não precisa apenas de um site — precisa de uma ferramenta que gere resultados. Criamos páginas estratégicas, pensadas para transmitir confiança, destacar seu valor e conduzir o visitante até a ação: entrar em contato ou comprar. Cada detalhe é desenvolvido com foco em conversão — do design ao texto, da estrutura ao botão final.</p>
+            <a href="https://wa.me/5594992719859?text=Olá,%20gostaria%20de%20um%20orçamento" class="btn-cta-final" target="_blank">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                </svg>
+                Quero mais clientes
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-bracket"></span>CODE<span class="logo-dot">.</span><span class="logo-bracket"></span>
+                    </a>
+                    <p>Criação de sites e landing pages estratégicas para empresas que querem atrair clientes todos os dias. Transformamos sua presença online em uma máquina de vendas com design, performance e copy persuasiva.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/devsantiagobraga_/" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rodolfo-santiago-carneiro-braga-551a43329/" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#depoimentos">Depoimentos</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Serviços</h4>
+                    <a href="#servicos">Landing Pages de Alta Conversão</a>
+                    <a href="#servicos">Sites Profissionais</a>
+                    <a href="#servicos">Lojas Virtuais (E-commerce)</a>
+                    <a href="#servicos">Sistemas e Aplicações Web</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Contato</h4>
+                    <a href="#">rodolfosantiagocb@gmail.com</a>
+                    <a href="https://wa.me/5594992719859?text=Olá,%20gostaria%20de%20um%20orçamento" target="_blank">+55 94 99271-9859S</a>
+                    <span>Atendimento online para todo o Brasil</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
